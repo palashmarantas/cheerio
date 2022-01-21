@@ -12,8 +12,10 @@ preMerge:
 stability:
   consecutive_runs: 5
 preRun:
+  command:
   - npm i
   - npm run react
 postRun:
+  command:
   - node --version
 version: 2.2
