@@ -6,9 +6,6 @@ modifiers:
 postMerge:
   pattern:
     - ".src/__tests__/**/*.spec.ts"
-  strategy:
-    threshold: <5|100s|30m|6h>
-    type: <commit|time>
 preMerge:
   pattern:
     - ".src/__tests__/**/*.spec.ts"
