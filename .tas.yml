@@ -1,21 +1,15 @@
 ---
 framework: jest
-modifiers:
-  - type: jest
-    cli: "--forbid-pending --no-bail"
 postMerge:
   pattern:
-    - ".src/__tests__/**/*.spec.ts"
+    - './src/**/*.spec.ts'
 preMerge:
   pattern:
-    - ".src/__tests__/**/*.spec.ts"
-stability:
-  consecutive_runs: 5
+    - './src/**/*.spec.ts'
 preRun:
   command:
-    - npm i
-    - npm run react
+    - npm ci
 postRun:
   command:
     - node --version
-version: 2.2
+version: 2.0
