@@ -11,7 +11,7 @@ function dom(str: string, options?: CheerioOptions) {
   const $ = cheerio.load('', options);
   return $(str).html();
 }
-
+//hg
 describe('render', () => {
   describe('(xml)', () => {
     it('should render <media:thumbnail /> tags correctly', () => {
